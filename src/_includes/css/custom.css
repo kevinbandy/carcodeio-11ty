@@ -5,6 +5,73 @@
 }
 
 html {
+  background-color: #383838;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background: url('/img/bg.svg');
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+}
+
+nav > div {
+  padding: 0 10%;
+}
+
+.logo-container {
+  padding: 10px;
+}
+
+.hero-bg, .hero-fg {
+  width: 100%;
+  min-height: 260px;
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-bg {
+  background-image: url('/img/hero-bg.png');
+}
+
+.hero-fg {
+  background-image: url('/img/hero-fg.png');
+}
+
+h1.hero-text {
+  color: white;
+  text-align: center;
+  margin: 100px;
+  font-size: 30px;
+}
+
+.tagline {
+  color: white;
+  left: calc(50% - 130px);
+  bottom: 8.4vw;
+  position: absolute;
+  min-width: 300px;
+  font-size: 45px;
+}
+
+svg {
+  width: 400px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 760px) {
+  .tagline {
+    bottom: 10.4vw;
+  }
+}
+@media screen and (min-width: 1460px) {
+  .tagline {
+    bottom: 11.4vw;
+  }
 }
